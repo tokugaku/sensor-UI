@@ -1,0 +1,87 @@
+body {
+    background:white;
+    
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.header-logo{
+    font-size:40px;
+    padding:40px 30px;
+    color:blue;
+}
+
+.main{
+    display:flex;
+}
+
+.panel {
+   padding:100px;
+    display: flex;
+    text-align: center;
+    gap: 40px;
+}
+
+
+
+.koudos,.siseis,.taikis{
+    flex-direction: column;
+}
+
+
+
+
+/* 対気速度計 */
+.taiki,.koudo,.sisei{
+    font-size:20px;
+    color:black;
+}
+.taiki:hover,.koudo:hover,.sisei:hover{
+    font-size:20px;
+    color:blue;
+}
+canvas#gauge {
+    background:#000;
+    border-radius: 50%;
+    box-shadow: 0 0 15px #000;
+}
+
+/* 人工地平儀 */
+canvas#attitude {
+    background: #444;
+    border-radius: 50%;
+    border: 6px solid #222;
+}
+
+/* 高度 */
+.altitude-box {
+    width: 150px;
+    height: 250px;
+    background: #111;
+    border: 6px solid #555;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.alt-value {
+    font-size: 40px;
+    color: #0ff;
+    font-family: "Courier New", monospace;
+}
+.header{
+    text-align:center;
+}
+.header a{
+    text-align: center;
+    font-size:40px;
+    color:black;
+    transition: .3s;
+}
+.header a:hover {
+    text-align:center;
+    color:blue;
+    font-size:40px;
+    transition: .3s;
+}
