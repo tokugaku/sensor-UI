@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>フライトログ--via Bluetooth</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="main">
+  <div class="panel">
+
+    <!-- 対気速度計 -->
+   <div class="taikis">
+     <h3 class="taiki">対気速度計</h3>
+     <canvas id="gauge" width="300" height="300"></canvas>
+   </div>
+    <!-- 人工地平儀 -->
+   <div class="siseis">
+     <h3 class="sisei">姿勢角</h3>
+     <canvas id="attitude" width="250" height="250"></canvas>
+   </div>   
+
+
+    <!-- 高度 -->
+   <div class="koudos">
+     <h3 class="koudo">高度計</h3>
+     <div class="altitude-box">
+        <div class="alt-value" id="altText">0 m</div>
+     </div>
+   </div>   
+
+
+  </div>
+
+
+
+</div>
+  <div class="header">
+    <a href="https://otsucle.jp/cf/project/205257.html">徳島大学鳥人間プロジェクト</a>
+
+  </div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
+
+
